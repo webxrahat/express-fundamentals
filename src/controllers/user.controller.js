@@ -15,5 +15,5 @@ export const updateUser = (req, res) => {
 };
 
 export const deleteUser = (req, res) => {
-  res.status(200).json(`get delete of id no:${req.params.id}`);
+  res.status(200).json({ message: `get delete of id no:${req.params.id}` });
 };
