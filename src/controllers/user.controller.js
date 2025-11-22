@@ -3,7 +3,10 @@ export const getUsers = (req, res) => {
 };
 
 export const createUser = (req, res) => {
-  res.status(201).json(req.body);
+  res.status(201).json({
+    success: true,
+    data: req.body,
+  });
 };
 
 export const getUser = (req, res) => {
